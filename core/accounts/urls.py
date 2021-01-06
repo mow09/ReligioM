@@ -7,7 +7,7 @@ app_name = 'accounts'
 urlpatterns = [
     path('register/', registerPage, name='register'),
     path('', include('django.contrib.auth.urls')),
-    path('logout/', auth_views.LogoutView.as_view(template_name='accounts/logout.html'), name='logout'),
+    # path('logout/', auth_views.LogoutView.as_view(template_name='accounts/logout.html'), name='logout'),
 
     # path('login/',
     #     auth_views.LoginView.as_view(

@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'o$9%kqjbaeuhxv)1=h1*nzpngks*g)x8pbrof(aw==jv=p0f_2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -46,7 +46,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'accounts', 'templates'),
-            os.path.join(BASE_DIR, '', 'templates'),
+            os.path.join(BASE_DIR, 'templates'),
             ],
         'APP_DIRS': True,
         'OPTIONS': {
